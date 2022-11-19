@@ -135,7 +135,6 @@ inner_res1.show()
 inner_res2 = orders.join(order_items, (orders.order_id == order_items.order_item_order_id) &
                          (orders.order_id == order_items.order_item_order_id))
 inner_res2.show()
-
-
 customers.join(orders, customers.customer_id==orders.order_customer_id, 'left').show()
 customers.join(orders, customers.customer_id==orders.order_customer_id, 'right').show()
+print(customers.join(orders, customers.customer_id==orders.order_customer_id, 'right').count())
