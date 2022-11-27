@@ -139,4 +139,4 @@ customers.join(orders, customers.customer_id==orders.order_customer_id, 'left').
 customers.join(orders, customers.customer_id==orders.order_customer_id, 'right').show()
 print(customers.join(orders, customers.customer_id==orders.order_customer_id, 'left').count())
 print(customers.join(orders, customers.customer_id==orders.order_customer_id, 'right').count())
-customers.show(2)
+customers.show(10,False)
