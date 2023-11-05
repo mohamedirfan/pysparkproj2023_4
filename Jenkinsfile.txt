@@ -11,7 +11,7 @@ pipeline {
         sh '''
           ls -lrt
           gcloud auth activate-service-account --key-file="$GCLOUD_CREDS"
-          gsutil cp * gs://inceptez-pyspark/
+          gsutil cp -r * gs://inceptez-pyspark/
           echo 'File Copied into GCS bucket'
         '''
       }
