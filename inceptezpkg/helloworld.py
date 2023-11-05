@@ -1,7 +1,5 @@
-myname='irfan'
+#New version of the code I developed
+myname='Hello World'
 print(myname)
-print("hello")
-print("test1")
-print("test2")
-print("tes")
-print("final test123")
+#100 lines of code
+#workarea -> commit -> local git repo -> push -> remote git repo
