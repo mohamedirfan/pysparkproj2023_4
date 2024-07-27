@@ -4,7 +4,7 @@ from pyspark.sql.types import StructType, StructField, StringType, IntegerType, 
 
 # Initialize Spark session
 spark = SparkSession.builder \
-    .appName("JsonSchemaExample") \
+    .appName("JsonSchemaExample for API Call") \
     .getOrCreate()
 
 # Fetch data from API
